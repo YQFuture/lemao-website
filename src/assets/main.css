@@ -1,0 +1,247 @@
+@import './base.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 当屏幕宽度大于1024px时 */
+/* @media (min-width: 1025px) { */
+.homePage {
+  width: 100%;
+  height: 100%;
+  font-family: 'Alibaba PuHuiTi';
+}
+.top {
+  width: 100%;
+  background: url('img/b1.png') no-repeat;
+  background-size: 100% 100%;
+}
+.content {
+  width: 100%;
+  margin: 64px 0px 0px;
+}
+.contentText {
+  text-align: center;
+  color: #ff7a03;
+  font-size: 54px;
+  font-weight: 400;
+}
+.dataPacket {
+  width: 100%;
+}
+/* :deep(.el-statistic__content) {
+  font-size: 32px !important;
+} */
+.el-statistic__content {
+  font-size: 48px !important;
+  color: #0b60fe !important;
+}
+.el-anchor.el-anchor--vertical .el-anchor__list {
+  padding-left: 0 !important;
+}
+
+.downloadButton {
+  width: 224px;
+  height: 70px;
+  margin: 64px auto 36px;
+  border-radius: 12px;
+  cursor: pointer;
+  border: 2px solid #15b9fb;
+  background: linear-gradient(
+    85deg,
+    #0b60fe 1.63%,
+    #228afa 54.91%,
+    #39b3f5 98.5%
+  );
+  font-size: 28px;
+  color: #fff;
+  img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+}
+.contactUs {
+  text-align: center;
+  font-size: 22px;
+  color: #222;
+  margin-bottom: 40px;
+}
+.videoBox {
+  width: 1440px;
+  border-radius: 18.045px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 1px 30px 0px rgba(0, 0, 0, 0.15);
+  margin: 20px auto;
+  padding: 30px;
+  img {
+    border-radius: 18px;
+  }
+}
+.bottom {
+  width: 1440px;
+  margin: 60px auto 0;
+}
+.bottomText {
+  text-align: center;
+  font-size: 34px;
+  color: #222;
+  span {
+    color: #fe7c0b;
+  }
+}
+.bottom-box {
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+.bottomBox {
+  width: 1440px;
+  flex-wrap: wrap;
+  /* background: pink; */
+}
+.bottom-box-item {
+  width: 30% !important;
+  text-align: center;
+  margin-bottom: 140px;
+  position: relative;
+}
+.bottom-img-box {
+  width: 100%;
+}
+.bottom-box-item img {
+  width: 72px;
+  height: 72px;
+}
+/* .imgs {
+  width: 484px;
+  height: 360px;
+} */
+.box-item-title-text {
+  font-size: 24px;
+  color: #222;
+  font-weight: 600;
+}
+.box-item-text {
+  font-size: 20px;
+  color: #222;
+  margin-top: 22px;
+}
+.bottom-box-item .isHeightLight {
+  position: absolute;
+  right: -6px;
+  top: -2px;
+  img {
+    width: 122px;
+    height: 122px;
+  }
+  .heightLightText {
+    position: absolute;
+    right: 0px;
+    top: 26px;
+    transform: rotate(45deg);
+    color: #fff;
+    font-size: 24px;
+  }
+}
+.exclusive {
+  width: 100%;
+  padding: 0 30px !important;
+  margin-bottom: 100px;
+}
+.exclusive-item-title {
+  width: calc(100% - 122px);
+  position: relative;
+}
+.bottom-img-box .exclusive-item-title img {
+  width: 100%;
+}
+.exclusiveBox {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  z-index: 2;
+}
+.exclusiveBox-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(34, 34, 34, 0.5);
+  box-shadow: 0px 0px 25px 0px rgba(255, 255, 255, 0.15) inset;
+  width: 100%;
+  height: 100%;
+}
+.exclusiveTitle {
+  font-size: 36px;
+  color: #fff;
+}
+.exclusivetext {
+  font-size: 20px;
+  color: #fff;
+  width: 100%;
+}
+
+.scanCode {
+  width: 1440px;
+  margin: 0px auto 150px;
+}
+
+.scanCode-img {
+  width: 497px;
+  height: 497px;
+  border-radius: 20px;
+  /* background:; */
+  box-shadow: 40px 40px 25px 0px #edeff8;
+}
+.scanCode-img-box {
+  position: relative;
+}
+.codeBox {
+  position: absolute;
+  top: 42px;
+  left: 30%;
+  padding: 72px 115px;
+  border-radius: 10px;
+  background: #fcfcfc;
+  box-shadow: 0px 6px 25px 0px rgba(0, 0, 0, 0.2);
+}
+/* 当屏幕宽度大于768px且小于或等于1024px时 */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .videoBox,
+  .bottom,
+  .scanCode {
+    width: calc(100% - 300px);
+  }
+  .imgs {
+    /* width: 273px;
+    height: 275px; */
+  }
+  .headerRight {
+    display: none;
+  }
+  .codeBox {
+    top: 42px;
+    left: 50%;
+    padding: 42px 40px;
+  }
+  .bottomBox {
+    width: calc(100% - 10px);
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1480px) {
+  .videoBox,
+  .bottom {
+    width: calc(100% - 100px);
+  }
+  /* .bottomBox,
+  .footer-con {
+    width: calc(100% - px);
+  } */
+  .bottomBox {
+    width: 100%;
+  }
+  .bottom-box-item {
+    width: 48%;
+  }
+}
