@@ -213,8 +213,8 @@
     width: calc(100% - 300px);
   }
   .imgs {
-    /* width: 273px;
-    height: 275px; */
+    width: 273px;
+    height: 220px;
   }
   .headerRight {
     display: none;
