@@ -1,26 +1,19 @@
 <template>
   <div class="footer">
-    <div class="footer-con flex justify-around">
+    <div class="footer-con flex justify-center">
       <div class="left-box">
-        <img src="@/assets/img/b.png" alt="" />
-        <div class="text-center text-xl font-bold text-[#000]">抖音官方号</div>
+        <!-- <img src="@/assets/img/b.png" alt="" />
+        <div class="text-center text-xl font-bold text-[#000]">抖音官方号</div> -->
       </div>
       <div class="record-box">
-        <div class="flex justify-end cursor-pointer">
-          <div
-            class="ml-12 text-base"
-            v-for="item in tabList"
-            :key="item.title"
-          >
+        <div class="flex justify-between cursor-pointer">
+          <div class="text-base" v-for="item in tabList" :key="item.title">
             <el-anchor-link :href="`#${item.path}`">
               {{ item.title }}
             </el-anchor-link>
           </div>
         </div>
-        <div class="record">
-          Copyright © 乐猫客服外包官网 Powered By
-          得乐猫（深圳）远控智能有限公司 粤ICP备2024337380号
-        </div>
+        <div class="record">Copyright © 云起未来(广东)网络科技有限公司</div>
       </div>
     </div>
   </div>
@@ -74,7 +67,6 @@ const tabList = ref([
       color: #222;
       font-size: 18px;
       text-align: center;
-      // padding: 36px;
       margin-top: 117px;
       margin-bottom: 72px;
       span {
